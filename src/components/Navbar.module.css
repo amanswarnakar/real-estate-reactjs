@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  font-size: 1.4rem;
+  height: 100px;
+  width: 98vw;
+  margin: auto;
+  font-weight: 600;
+  border-bottom: #999 1px solid;
+}
+.left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.navItems {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navItems .link{
+  margin-right: 40px;
+  letter-spacing: -1.25px;
+  text-decoration: none;
+  color: #222;
+  cursor: pointer;
+}
+.navItems .active {
+  background: rgba(162, 111, 209, 0.5);
+  padding: 3px 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+.companyName {
+  margin-right: 10%;
+}
+
+.auth {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+.auth .authButton {
+  margin-left: 20px;
+  height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
