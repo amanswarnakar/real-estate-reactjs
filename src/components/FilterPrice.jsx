@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./Filters.module.css";
 import { TextField } from "@mui/material";
 import { MenuItem } from "@mui/material";
 
 const Prices = [
-  { value: "$0 - $100" },
-  { value: "$100 - $200" },
-  { value: "$200 - $500" },
-  { value: "$500 - $1000" },
-  { value: "$1000+" },
+  { label: "None", value: 0 },
+  { label: "₹0 - ₹2000", value: 1 },
+  { label: "₹2000 - ₹5000", value: 2 },
+  { label: "₹5000 - ₹10000", value: 3 },
+  { label: "₹10000 - ₹50000", value: 4 },
+  { label: "₹50000+", value: 5 },
 ];
 
-const FilterPrice = () => {
-  const [price, setPrice] = useState();
-  const handleChange = (event, newValue) => {
-    setPrice(newValue);
+const FilterPrice = ({ price, setPrice }) => {
+  const handleChange = (event) => {
+    setPrice(event.target.value);
   };
   return (
     <div>
@@ -29,7 +29,7 @@ const FilterPrice = () => {
       >
         {Prices.map((option) => (
           <MenuItem key={option.value} value={option.value}>
-            {option.value}
+            {option.label}
           </MenuItem>
         ))}
       </TextField>

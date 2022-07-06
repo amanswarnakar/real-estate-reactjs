@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import classes from "./Filters.module.css";
 const Locations = [
+  { value: "None" },
   { value: "Kolkata" },
   { value: "Delhi" },
   { value: "Chennai" },
@@ -11,9 +12,7 @@ const Locations = [
   { value: "Hyderabad" },
   { value: "Bengaluru" },
 ];
-const FilterLocation = () => {
-  const [location, setLocation] = React.useState("");
-
+const FilterLocation = ({ location, setLocation }) => {
   const handleChange = (event) => {
     setLocation(event.target.value);
   };

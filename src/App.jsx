@@ -1,8 +1,8 @@
 import "./App.css";
-import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
 import Filters from "./components/Filters";
 import Search from "./components/Search";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,9 +10,7 @@ function App() {
       <Navbar />
       <Search />
       <Filters />
-      <div className="App flex flex-wrap p-4">
-        <Cards />
-      </div>
+      <Footer />
     </div>
   );
 }

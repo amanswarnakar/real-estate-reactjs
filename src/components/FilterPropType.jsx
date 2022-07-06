@@ -4,6 +4,7 @@ import MenuItem from "@mui/material/MenuItem";
 import classes from "./Filters.module.css";
 
 const PropTypes = [
+  { value: "None" },
   { value: "House/Villa" },
   { value: "Flat" },
   { value: "Bungalow" },
@@ -16,8 +17,7 @@ const PropTypes = [
   { value: "4+BHK" },
 ];
 
-const FilterPropType = () => {
-  const [propType, setPropType] = React.useState("House");
+const FilterPropType = ({propType, setPropType}) => {
 
   const handleChange = (event) => {
     setPropType(event.target.value);

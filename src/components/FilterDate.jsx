@@ -18,7 +18,7 @@ export default function FilterDate() {
       <h3>When</h3>
       <Stack>
         <DesktopDatePicker
-          inputFormat="MM/dd/yyyy"
+          inputFormat="dd/MM/yyyy"
           disablePast
           className={classes.filter}
           variant="standard"

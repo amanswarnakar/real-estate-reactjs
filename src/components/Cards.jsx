@@ -1,20 +1,34 @@
 import React from "react";
 import Card from "./Card";
 import classes from "./Cards.module.css";
+import Data from "../data/Data";
 
-const Cards = () => {
-  return (
+const Cards = ({
+  location,
+  price,
+  propType,
+  onLocationFilter,
+  onPriceFilter,
+  onPropTypeFilter,
+}) => {
+  let data = [...Data];
+  data = Data.filter((obj) => obj.address === location);
+
+  return (  
     <div className={classes.container}>
-      <Card
-        imgScr="https://images.unsplash.com/photo-1656956172812-1ad9abaeaeda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        imgAlt="house"
-        price="300"
-        name="Aman"
-        address="Dighi Hills"
-        bedNum="3"
-        bathNum="2"
-        area="6*7.5"
-      ></Card>
+      {data.map((obj) => (
+        <Card
+          imgScr={obj.imgScr}
+          imgAlt={obj.imgAlt}
+          price={obj.price}
+          name={obj.name}
+          address={obj.address}
+          bedNum={obj.bedNum}
+          bathNum={obj.bathNum}
+          area={obj.area}
+          isPopular={obj.isPopular}
+        />
+      ))}
     </div>
   );
 };

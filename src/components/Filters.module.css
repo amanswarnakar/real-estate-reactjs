@@ -3,7 +3,7 @@
   width: 80%;
   height: 140px;
   justify-content: space-between;
-  align-items: flex-star`t;
+  align-items: flex-start;
   margin: 0 auto 20px;
   background: #fff;
   padding: 20px;
@@ -29,4 +29,12 @@ h3 {
 
 .filterButton {
   margin: auto 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
