@@ -31,7 +31,7 @@ const Card = (props) => {
             <BathtubIcon /> {props.bathNum} Bathrooms
           </span>
           <span>
-            <ViewComfyIcon /> {props.area} sq. m
+            <ViewComfyIcon /> {props.area} sqft
           </span>
         </div>
       </div>

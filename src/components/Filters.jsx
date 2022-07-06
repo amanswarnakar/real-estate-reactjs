@@ -47,14 +47,12 @@ const Filters = () => {
   }
   if (price !== "" && price !== "None") {
     if (price === 1) {
-      data = data.filter((obj) => obj.price <= 2000);
+      data = data.filter((obj) => obj.price <= 5000);
     } else if (price === 2) {
-      data = data.filter((obj) => obj.price > 2000 && obj.price <= 5000);
-    } else if (price === 3) {
       data = data.filter((obj) => obj.price > 5000 && obj.price <= 10000);
-    } else if (price === 4) {
+    } else if (price === 3) {
       data = data.filter((obj) => obj.price > 10000 && obj.price <= 50000);
-    } else if (price === 5) {
+    } else if (price === 4) {
       data = data.filter((obj) => obj.price > 50000);
     }
   }

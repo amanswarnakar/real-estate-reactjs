@@ -5,11 +5,10 @@ import { MenuItem } from "@mui/material";
 
 const Prices = [
   { label: "None", value: 0 },
-  { label: "₹0 - ₹2000", value: 1 },
-  { label: "₹2000 - ₹5000", value: 2 },
-  { label: "₹5000 - ₹10000", value: 3 },
-  { label: "₹10000 - ₹50000", value: 4 },
-  { label: "₹50000+", value: 5 },
+  { label: "₹0 - ₹5000", value: 1 },
+  { label: "₹5000 - ₹10000", value: 2 },
+  { label: "₹10000 - ₹50000", value: 3 },
+  { label: "₹50000+", value: 4 },
 ];
 
 const FilterPrice = ({ price, setPrice }) => {

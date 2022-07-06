@@ -6,15 +6,12 @@ import classes from "./Filters.module.css";
 const PropTypes = [
   { value: "None" },
   { value: "House/Villa" },
-  { value: "Flat" },
   { value: "Bungalow" },
   { value: "Duplex" },
-  { value: "Plot" },
   { value: "1BHK" },
   { value: "2BHK" },
   { value: "3BHK" },
   { value: "4BHK" },
-  { value: "4+BHK" },
 ];
 
 const FilterPropType = ({propType, setPropType}) => {

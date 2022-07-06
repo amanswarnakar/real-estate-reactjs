@@ -4,13 +4,13 @@ import MenuItem from "@mui/material/MenuItem";
 import classes from "./Filters.module.css";
 const Locations = [
   { value: "None" },
-  { value: "Kolkata" },
-  { value: "Delhi" },
+  { value: "Bengaluru" },
   { value: "Chennai" },
+  { value: "Delhi" },
+  { value: "Hyderabad" },
+  { value: "Kolkata" },
   { value: "Mumbai" },
   { value: "Pune" },
-  { value: "Hyderabad" },
-  { value: "Bengaluru" },
 ];
 const FilterLocation = ({ location, setLocation }) => {
   const handleChange = (event) => {
